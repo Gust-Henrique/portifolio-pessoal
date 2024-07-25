@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hello World! I'm Gust!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about"></a>about</li>
+                <li><a href="#projects"></a>Projects</li>
+                <li><a href="#contact"></a>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About me</h2>
+            <p> I'm 18 years old, I currently live in Brazil. I speak moderate English and have experience with Python and JS. In the future I intend to learn other languages.
+            I'm currently studying "Systems Analysis and Development" at university.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gustavo Henrique</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
