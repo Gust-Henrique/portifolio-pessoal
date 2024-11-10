@@ -24,6 +24,7 @@ header {
 
 header h1 {
     margin: 0;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.7);
 }
 
 nav ul {
@@ -77,6 +78,7 @@ footer {
     padding: 10px 0;
     width: 100%;
     position: relative;
+    bottom: 0;
 }
 
 ul {
@@ -102,3 +104,106 @@ ul li a i {
 ul li a:hover {
     text-decoration: underline;
 }
+
+.project:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.452);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007acc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005b99;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    color: #000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.technologies {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.html-icon {
+    font-size: 2rem;
+    color: #e34c26; /* Cor do HTML */
+    transition: transform 0.3s;
+}
+
+.css-icon {
+    font-size: 2rem;
+    color: #264de4; /* Cor do CSS */
+    transition: transform 0.3s;
+}
+
+.js-icon {
+    font-size: 2rem;
+    color: #f7df1e; /* Cor do JavaScript */
+    transition: transform 0.3s;
+}
+
+/* Efeito de hover para cada ícone */
+.technologies i:hover {
+    transform: scale(1.2);
+}
+

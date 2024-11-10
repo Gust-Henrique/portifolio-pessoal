@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifólio</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -26,13 +28,86 @@
         <section id="projects">
             <h2>Course projects</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Descrição do projeto 1.</p>
+                <h3>Project 1: Android Website</h3>
+                <img src="imagens/imagem_siteandroid.png" alt="Preview android website" class="project-image">
+                <p>This site tells a little about the history of the Android mascot</p>
+                <button onclick="openModal('site-android')">Show details</button>
+                <a href=" https://gust-henrique.github.io/site-android/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                </div>
+            </div>
+            <div id="site-android-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-android')">&times;</span>
+                    <h3>Android Website</h3>
+                    <p>This was my first website project using only HTML5 and CSS3, when I was at the beginning of my frontend course.</p>
+                    <a href=" https://gust-henrique.github.io/site-android/" target="_blank">View Project</a>
+                </div>
+
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Descrição do projeto 2.</p>
+                <h3>Project 2: Cordel Website</h3>
+                <img src="imagens/imagem_sitecordel.png" alt="Preview android website" class="project-image">
+                <p>This project is inspired by "Literatura de Cordel" a traditional Brazilian style of literature. It showcases poems with unique graphics and a vertical scroll layout, emulating the style of cordel booklets. Through this project, I aimed to develop creative web layout skills and experiment with CSS animations and typography.</p>
+                <button onclick="openModal('site-cordel')">Show details</button>
+                <a href="https://gust-henrique.github.io/projeto-cordel/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                </div>
             </div>
+            <div id="site-cordel-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-cordel')">&times;</span>
+                    <h3>Cordel Website</h3>
+                    <p>This was my second project with HTML5 and CSS3, writing a Cordel with a parallax effect background</p>
+                    <a href="https://gust-henrique.github.io/projeto-cordel/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: SocialMedia Website</h3>
+                <img src="imagens/imagem_sitesocialmedia.png" alt="Preview android website" class="project-image">
+                <p>This project is a social platform built using a robust framework, designed to enhance user interaction and engagement. The platform includes features such as user profiles, activity feeds, and responsive design.</p>
+                <button onclick="openModal('site-social')">Show details</button>
+                <a href=" https://gust-henrique.github.io/projeto-social/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                </div>
+            </div>
+            <div id="site-social-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-social')">&times;</span>
+                    <h3>SocialMedia Website</h3>
+                    <p>This was my third project using HTML5 and CSS3, but in this project I used more frameworks to learn.(The social networks are not mine but my teacher's, I thought it worth putting his for publicity)</p>
+                    <a href="https://gust-henrique.github.io/projeto-social/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 4: Login Screen Website</h3>
+                <img src="imagens/imagem_telalogin.png" alt="Preview android website" class="project-image">
+                <p>This project demonstrates a responsive login page design with dynamic elements. The page is optimized for various screen sizes, ensuring an intuitive user experience on both desktop and mobile devices. A responsive layout adapts seamlessly to different devices, delivering consistent visuals and functionality.</p>
+                <button onclick="openModal('site-login')">Show details</button>
+                <a href="https://gust-henrique.github.io/projeto-login/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                </div>
+            </div>
+            <div id="site-login-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-login')">&times;</span>
+                    <h3>Login Screen Website</h3>
+                    <p>This was my fourth project, I made a more responsive design, to be compatible with any screen size</p>
+                    <a href="https://gust-henrique.github.io/projeto-login/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -52,7 +127,7 @@
                 <li>&#128279;<a href="https://www.linkedin.com/in/gustavo-henrique-281a5b25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
                 <li>&#128049;<a href="https://github.com/Gust-Henrique" target="_blank">GitHub</a></li>
                 <li>&#128247;<a href="https://www.instagram.com/gust17_henri/" target="_blank">Instagram</a></li>
-                <li>&#128241;Celular: (41)99716-6329</li>
+                <li>&#128241;Celular: +55 (41)99716-6329</li>
             </ul>
         </section>
     </main>
