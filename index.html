@@ -109,17 +109,55 @@
 
             
         </section>
+
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Descrição do projeto 1.</p>
+                <h3>Project 1: Simple Calculator</h3>
+                <img src="imagens/imagem_calculator.png" alt="Preview android website" class="project-image">
+                <p>A simple calculator project</p>
+                <button onclick="openModal('site-calculator')">Show details</button>
+                <a href="https://gust-henrique.github.io/calculator/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                    <i class="fab fa-js-square js-icon"></i>
+                </div>
             </div>
+            <div id="site-calculator-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-calculator')">&times;</span>
+                    <h3>Simple Calculator</h3>
+                    <p>This was my first project using JavaScript, where I started to tinker and understand how it worked.</p>
+                    <a href="https://gust-henrique.github.io/calculator/" target="_blank">View Project</a>
+                </div>  
+            </div>
+
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Descrição do projeto 2.</p>
+                <h3>Project 2: Simple To-Do list</h3>
+                <img src="imagens/imagem_To-doList.png" alt="Preview android website" class="project-image">
+                <p>A simple To-Do list project</p>
+                <button onclick="openModal('site-todolist')">Show details</button>
+                <a href="https://gust-henrique.github.io/to-do-list/" target="_blank" class="cta-button">View Project</a>
+                <div class="technologies">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <i class="fab fa-css3-alt css-icon"></i>
+                    <i class="fab fa-js-square js-icon"></i>
+                </div>
             </div>
+            <div id="site-todolist-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('site-todolist')">&times;</span>
+                    <h3>Simple To-Do list</h3>
+                    <p>This was my second project using JavaScript, a simple To-Do List, but it helped me understand JS more.</p>
+                    <a href="https://gust-henrique.github.io/to-do-list/" target="_blank">View Project</a>
+                </div>  
+            </div>
+
+            
         </section>
+
+
         <section id="contact">
             <h2>Contact</h2>
             <ul>
