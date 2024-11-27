@@ -60,9 +60,12 @@ main {
 
 section {
     margin-bottom: 2rem;
+    align-content: center;
 }
 
 .project {
+    align-items: center;
+    align-content: center;
     background-color: rgba(207, 206, 206, 0.904);
     padding: 1rem;
     margin: 3rem;
